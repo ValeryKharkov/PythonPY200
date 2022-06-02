@@ -12,7 +12,7 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 399
+  - offset: 398
     length: 68
     placeholder_text: '# TODO установить значение следующего узла с помощью метода
       set_next'
@@ -20,13 +20,13 @@ files:
       length: 68
       offset: 399
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       self.next = None
               self.set_next(next_)
-  - offset: 601
-    length: 64
+  - offset: 628
+    length: 128
     placeholder_text: |-
       # TODO метод проверки корректности связываемого узла
               ...
@@ -34,13 +34,13 @@ files:
       length: 64
       offset: 601
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |2-
        if not isinstance(node, (type(None), Node)):
                   raise TypeError
-  - offset: 739
-    length: 98
+  - offset: 830
+    length: 136
     placeholder_text: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
@@ -48,32 +48,32 @@ files:
       length: 98
       offset: 739
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       self.is_valid(next_)
               self.next = next_
-  - offset: 871
-    length: 50
+  - offset: 1000
+    length: 45
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
       length: 50
       offset: 871
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       first_node = Node(1)
           second_node = Node(2)
-  - offset: 927
-    length: 36
+  - offset: 1102
+    length: 31
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:
       length: 36
       offset: 927
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: first_node.set_next(second_node)
   text: |
     from typing import Any, Optional
@@ -112,5 +112,14 @@ files:
         print(first_node)
         print(second_node)
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Thu, 02 Jun 2022 17:08:34 UTC
+  expected: |
+    Node(1, Node(2, None))
+    Node(2, None)
+  actual: |
+    Node(10, None)
+    Node(10, None)
 record: -1
