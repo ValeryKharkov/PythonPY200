@@ -16,6 +16,8 @@ files:
         glass = Glass(200, 0)
         print(dir(glass))
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Thu, 09 Jun 2022 15:12:12 UTC
 record: -1
 post_submission_on_open: true

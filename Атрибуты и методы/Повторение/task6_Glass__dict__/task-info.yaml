@@ -9,8 +9,8 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 144
-    length: 130
+  - offset: 165
+    length: 138
     placeholder_text: |-
       self.capacity_volume = capacity_volume  # объем стакана
               self.occupied_volume = occupied_volume  # объем жидкости в стакане
@@ -19,7 +19,7 @@ files:
       offset: 144
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Solved
     encrypted_possible_answer: |-
       print(self.__dict__)
               self.capacity_volume = capacity_volume  # объем стакана
@@ -41,5 +41,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 09 Jun 2022 15:14:36 UTC
 record: -1

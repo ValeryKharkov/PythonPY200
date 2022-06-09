@@ -13,5 +13,5 @@ class Glass:
 
 if __name__ == "__main__":
     result = Glass('paper')
-    print(result)
+    print(result.material_attr)
 # TODO что сделать, что бы консоль печатала "paper"
