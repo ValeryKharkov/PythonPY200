@@ -10,27 +10,27 @@ files:
   visible: true
   placeholders:
   - offset: 245
-    length: 33
+    length: 63
     placeholder_text: '...  # TODO добавить атрибут tail'
     initial_state:
       length: 33
       offset: 245
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: self.tail = self.head
-  - offset: 548
-    length: 64
+  - offset: 578
+    length: 71
     placeholder_text: 'self.head = append_node  # TODO добавить использование self.tail'
     initial_state:
       length: 64
       offset: 548
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: self.head = self.tail = append_node
-  - offset: 639
-    length: 181
+  - offset: 676
+    length: 186
     placeholder_text: |-
       last_index = self.len - 1  # TODO Переделать через атрибут tail
                   last_node = self.step_by_step_on_nodes(last_index)
@@ -40,21 +40,21 @@ files:
       length: 181
       offset: 639
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       self.linked_nodes(self.tail, append_node)
                   self.tail = append_node
-  - offset: 1584
-    length: 89
+  - offset: 1626
+    length: 81
     placeholder_text: 'left_node.set_next(right_node)  # TODO next теперь свойство
       имеет setter, используйте это'
     initial_state:
       length: 89
       offset: 1584
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: left_node.next = right_node
   text: |
     from typing import Any, Iterable, Optional
@@ -180,5 +180,12 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Thu, 16 Jun 2022 16:57:52 UTC
+  expected: |
+    [1, 2, 3]
+    [1, 2, 3, 100]
+  actual: <no output>
 record: -1

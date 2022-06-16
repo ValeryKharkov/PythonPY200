@@ -10,8 +10,8 @@ files:
       length: 41
       offset: 948
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '# TODO'
   text: |
     from typing import Any, Optional
@@ -53,6 +53,8 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  time: Thu, 16 Jun 2022 17:30:25 UTC
 record: -1
 post_submission_on_open: true
