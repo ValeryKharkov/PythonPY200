@@ -20,15 +20,14 @@ if __name__ == "__main__":
     glass1 = Glass(200, 100)  # экземпляр класса
     print(glass1.capacity_volume, glass1.occupied_volume)
 
-    glass2 = Glass(100, 50)  # инициализировать ещё один стакан
+    glass2 = Glass(200, 200)  # инициализировать ещё один стакан
     print(glass2.capacity_volume, glass2.occupied_volume)  # распечатать атрибуты экземпляра glass2
 
-    print("Доливаем воды в первый стакан...")
+    print("Доливаем воды в первый стакан..., получаем:")
     #   доливаем воды в первый стакан
-    glass1.occupied_volume += 200
-    glass2.occupied_volume += 200
-    print(glass1.capacity_volume, glass1.occupied_volume)
-    print(glass2.capacity_volume, glass2.occupied_volume)
+    glass1.occupied_volume += 150
+    print(glass1.occupied_volume)
 
-    #  сравнить id объектов
-    print(id(glass1)) == print(id(glass2))
+
+    #   сравнить id объектов
+    print(glass1.occupied_volume is glass1.occupied_volume + 100)

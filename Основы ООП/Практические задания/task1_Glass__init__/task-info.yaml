@@ -7,7 +7,7 @@ files:
   visible: true
   placeholders:
   - offset: 144
-    length: 34
+    length: 36
     placeholder_text: '#  TODO инициализировать объект "Стакан"'
     initial_state:
       length: 40
@@ -27,8 +27,8 @@ files:
               if occupied_volume < 0:
                   raise ValueError
               self.occupied_volume = occupied_volume  # объем жидкости в стакане
-  - offset: 643
-    length: 46
+  - offset: 618
+    length: 47
     placeholder_text: '...  # TODO инициализировать два объекта типа Glass'
     initial_state:
       length: 51
@@ -39,7 +39,7 @@ files:
     encrypted_possible_answer: |-
       glass1 = Glass(200, 100)  # экземпляр класса
           glass2 = Glass(500, 50)  # экземпляр класса
-  - offset: 754
+  - offset: 735
     length: 52
     placeholder_text: '# TODO попробовать инициализировать не корректные объекты'
     initial_state:
@@ -66,5 +66,7 @@ files:
         # TODO попробовать инициализировать не корректные объекты
   learner_created: false
 status: Solved
+feedback:
+  time: Tue, 21 Jun 2022 20:08:32 UTC
 record: -1
 post_submission_on_open: true

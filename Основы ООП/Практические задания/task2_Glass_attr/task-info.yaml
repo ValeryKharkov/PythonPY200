@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 724
-    length: 50
+    length: 51
     placeholder_text: '...  # TODO инициализировать ещё один стакан'
     initial_state:
       length: 44
@@ -13,7 +13,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: 'Glass(500, 50)  # экземпляр класса'
-  - offset: 785
+  - offset: 786
     length: 89
     placeholder_text: '...)  # TODO распечатать атрибуты экземпляра glass2'
     initial_state:
@@ -23,8 +23,8 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: glass2.capacity_volume, glass2.occupied_volume)
-  - offset: 926
-    length: 101
+  - offset: 938
+    length: 33
     placeholder_text: '#  TODO доливаем воды в первый стакан'
     initial_state:
       length: 37
@@ -33,14 +33,14 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: glass1.occupied_volume += 100
-  - offset: 1149
-    length: 23
+  - offset: 1046
+    length: 24
     placeholder_text: '#  TODO сравнить id объектов'
     initial_state:
       length: 28
       offset: 1041
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Solved
     encrypted_possible_answer: print(id(glass1) == id(glass2))
   text: |
@@ -80,5 +80,7 @@ files:
   visible: false
   learner_created: false
 status: Solved
+feedback:
+  time: Tue, 21 Jun 2022 20:15:01 UTC
 record: -1
 post_submission_on_open: true

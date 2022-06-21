@@ -9,10 +9,9 @@ class Glass:
     def __repr__(self) -> str:
         return f"Glass({self.capacity_volume}, {self.occupied_volume})"
 
-    #  метод должен возвращать строку, которая содержит человеко-читаемую информацию
-
     def __str__(self) -> str:
-        return f"Стакан объёмом {self.capacity_volume}. Объём жидкости = {self.occupied_volume}"
+        ...  # TODO метод должен возвращать строку, которая содержит человеко-читаемую информацию
+
 
 if __name__ == "__main__":
     glass = Glass(200, 100)  # экземпляр класса
