@@ -23,7 +23,7 @@ files:
       offset: 144
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       self.capacity_volume = None
               self.init_capacity_volume(capacity_volume)
@@ -36,7 +36,7 @@ files:
       offset: 609
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |2-
           def init_capacity_volume(self, capacity_volume: Union[int, float]):
               if not isinstance(capacity_volume, (int, float)):
@@ -52,7 +52,7 @@ files:
       offset: 720
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: 'glass = Glass(200, 100)  # экземпляр класса'
   - offset: 782
     length: 48
@@ -62,7 +62,7 @@ files:
       offset: 782
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: glass.capacity_volume)
   - offset: 841
     length: 48
@@ -72,7 +72,7 @@ files:
       offset: 841
     initialized_from_dependency: false
     selected: true
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: glass.occupied_volume)
   text: |
     from typing import Union
@@ -104,5 +104,14 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Wed, 22 Jun 2022 19:40:29 UTC
+  expected: |
+    200
+    100
+  actual: |
+    Ellipsis
+    Ellipsis
 record: -1

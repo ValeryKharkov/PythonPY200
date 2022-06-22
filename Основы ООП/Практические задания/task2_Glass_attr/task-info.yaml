@@ -80,7 +80,5 @@ files:
   visible: false
   learner_created: false
 status: Solved
-feedback:
-  time: Tue, 21 Jun 2022 20:15:01 UTC
 record: -1
 post_submission_on_open: true

@@ -10,7 +10,7 @@ class Glass:
         return f"Glass({self.capacity_volume}, {self.occupied_volume})"
 
     def __str__(self) -> str:
-        ...  # TODO метод должен возвращать строку, которая содержит человеко-читаемую информацию
+        return f"Стакан объёмом {self.capacity_volume}. Объём жидкости = {self.occupied_volume}" # метод должен возвращать строку, которая содержит человеко-читаемую информацию
 
 
 if __name__ == "__main__":

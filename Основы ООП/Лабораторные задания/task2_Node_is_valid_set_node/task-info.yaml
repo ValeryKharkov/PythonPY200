@@ -12,7 +12,7 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 398
+  - offset: 399
     length: 68
     placeholder_text: '# TODO установить значение следующего узла с помощью метода
       set_next'
@@ -21,12 +21,12 @@ files:
       offset: 399
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: |-
       self.next = None
               self.set_next(next_)
-  - offset: 628
-    length: 128
+  - offset: 601
+    length: 64
     placeholder_text: |-
       # TODO метод проверки корректности связываемого узла
               ...
@@ -35,12 +35,12 @@ files:
       offset: 601
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: |2-
        if not isinstance(node, (type(None), Node)):
                   raise TypeError
-  - offset: 830
-    length: 136
+  - offset: 739
+    length: 98
     placeholder_text: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
@@ -49,31 +49,31 @@ files:
       offset: 739
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: |-
       self.is_valid(next_)
               self.next = next_
-  - offset: 1000
-    length: 45
+  - offset: 871
+    length: 50
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
       length: 50
       offset: 871
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: |-
       first_node = Node(1)
           second_node = Node(2)
-  - offset: 1102
-    length: 31
+  - offset: 927
+    length: 36
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:
       length: 36
       offset: 927
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: first_node.set_next(second_node)
   text: |
     from typing import Any, Optional
@@ -112,14 +112,5 @@ files:
         print(first_node)
         print(second_node)
   learner_created: false
-status: Failed
-feedback:
-  message: Incorrect
-  time: Thu, 02 Jun 2022 17:08:34 UTC
-  expected: |
-    Node(1, Node(2, None))
-    Node(2, None)
-  actual: |
-    Node(10, None)
-    Node(10, None)
+status: Unchecked
 record: -1
