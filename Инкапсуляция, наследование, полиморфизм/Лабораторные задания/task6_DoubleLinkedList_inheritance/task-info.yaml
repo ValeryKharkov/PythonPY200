@@ -10,7 +10,7 @@ files:
       length: 41
       offset: 2127
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: '...'
   text: |

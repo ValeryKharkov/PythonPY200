@@ -14,28 +14,28 @@ files:
   visible: true
   placeholders:
   - offset: 2238
-    length: 53
+    length: 178
     placeholder_text: '...  # TODO функция-генератор для перебора всех узлов'
     initial_state:
       length: 53
       offset: 2238
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       current_node = self.head
               for _ in range(self.len):
                   yield current_node
                   current_node = current_node.next
-  - offset: 2297
-    length: 36
+  - offset: 2422
+    length: 31
     placeholder_text: '# TODO определить метод __contains__'
     initial_state:
       length: 36
       offset: 2297
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       def __contains__(self, item):
               print("Вызван метод \"__contains__\"")
@@ -168,5 +168,22 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Thu, 23 Jun 2022 15:36:54 UTC
+  expected: |
+    Проверка вхождения числа 2 в связный список
+    Вызван метод "__contains__"
+    True
+    Проверка вхождения числа 5 в связный список
+    Вызван метод "__contains__"
+    False
+  actual: |
+    Проверка вхождения числа 2 в связный список
+    Вызван метод " __contains__"
+    True
+    Проверка вхождения числа 5 в связный список
+    Вызван метод " __contains__"
+    False
 record: -1
