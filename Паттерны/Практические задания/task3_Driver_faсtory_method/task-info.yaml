@@ -9,29 +9,29 @@ files:
   visible: true
   placeholders:
   - offset: 94
-    length: 31
+    length: 36
     placeholder_text: '# TODO Реализовать абстрактный класс'
     initial_state:
       length: 36
       offset: 94
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Unchecked
     encrypted_possible_answer: |-
       class DriverFactoryMethod(ABC):
           @classmethod
           @abstractmethod
           def get_driver(cls) -> IStructureDriver:
               ...
-  - offset: 699
-    length: 91
+  - offset: 578
+    length: 63
     placeholder_text: '...  # TODO с помощью фабричного метода инциализировать драйвер'
     initial_state:
       length: 63
       offset: 578
     initialized_from_dependency: false
-    selected: true
-    status: Failed
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: SimpleFileFactoryMethod.get_driver()
   text: |
     from abc import ABC, abstractmethod
@@ -115,11 +115,5 @@ files:
         read_data = driver.read()
         print(read_data)
   learner_created: false
-status: Failed
-feedback:
-  message: Incorrect
-  time: Thu, 23 Jun 2022 16:27:24 UTC
-  expected: |
-    Введите название текстового файла: (.txt): SimpleFileDriver("untitled.txt")
-  actual: 'Введите название текстового файла: (.txt): '
+status: Unchecked
 record: -1

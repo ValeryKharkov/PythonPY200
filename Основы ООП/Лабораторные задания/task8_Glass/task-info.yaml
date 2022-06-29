@@ -3,7 +3,7 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 0
+  - offset: 1530
     length: 47
     placeholder_text: '# TODO Добавить методы add_water и remove_water'
     dependency:

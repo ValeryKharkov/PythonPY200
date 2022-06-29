@@ -18,9 +18,6 @@ files:
             with self.assertRaises(TypeError, msg=msg):
                 node.is_valid("invalid_type")
   learner_created: false
-- name: __init__.py
-  visible: false
-  learner_created: false
 - name: tests/__init__.py
   visible: false
   learner_created: false
@@ -36,7 +33,7 @@ files:
       offset: 399
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       self.next = None
               self.set_next(next_)
@@ -50,7 +47,7 @@ files:
       offset: 601
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |2-
        if not isinstance(node, (type(None), Node)):
                   raise TypeError
@@ -64,7 +61,7 @@ files:
       offset: 739
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       self.is_valid(next_)
               self.next = next_
@@ -76,7 +73,7 @@ files:
       offset: 871
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       first_node = Node(1)
           second_node = Node(2)
@@ -88,7 +85,7 @@ files:
       offset: 927
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: first_node.set_next(second_node)
   text: |
     from typing import Any, Optional
@@ -126,6 +123,9 @@ files:
 
         print(first_node)
         print(second_node)
+  learner_created: false
+- name: __init__.py
+  visible: false
   learner_created: false
 status: Solved
 feedback:

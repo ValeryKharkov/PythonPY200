@@ -8,40 +8,40 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 697
-    length: 88
+  - offset: 701
+    length: 57
     placeholder_text: '...  # TODO реализовать драйвер работы с текстовым файлом'
     initial_state:
       length: 57
       offset: 701
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: |-
       def __init__(self, filename):
               self.filename = filename
-  - offset: 1130
-    length: 43
+  - offset: 764
+    length: 47
     placeholder_text: '# TODO реализовать метод чтения данных из файла'
     initial_state:
       length: 47
       offset: 764
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       def read(self) -> Iterable:
               with open(self.filename) as f:
                   return [int(line) for line in f]
-  - offset: 1179
-    length: 44
+  - offset: 817
+    length: 48
     placeholder_text: '# TODO реализовать метод записи в файл построчно'
     initial_state:
       length: 48
       offset: 817
     initialized_from_dependency: false
     selected: false
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       def write(self, data: Iterable) -> None:
               with open(self.filename, "w") as f:
@@ -95,11 +95,5 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-- name: output.txt
-  visible: true
-  learner_created: true
-status: Solved
-feedback:
-  message: Congratulations!
-  time: Thu, 23 Jun 2022 16:11:34 UTC
+status: Unchecked
 record: -1

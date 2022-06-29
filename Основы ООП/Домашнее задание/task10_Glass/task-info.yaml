@@ -4,14 +4,14 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 39
+    length: 40
     placeholder_text: '# TODO написать класс Glass согласно условию'
     initial_state:
       length: 44
       offset: 0
     initialized_from_dependency: false
     selected: true
-    status: Solved
+    status: Unchecked
     encrypted_possible_answer: |-
       class Glass:
           def __init__(self, material: str):
@@ -44,14 +44,14 @@ files:
             self.assertEqual(material, glass.get_material(),
                              msg="Метод get_material должен возвращать материал стакана.")
   learner_created: false
-- name: __init__.py
+- name: tests/__init__.py
   visible: false
   learner_created: false
-- name: tests/__init__.py
+- name: __init__.py
   visible: false
   learner_created: false
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 08 Jun 2022 19:37:31 UTC
+  time: Tue, 28 Jun 2022 20:58:59 UTC
 record: -1

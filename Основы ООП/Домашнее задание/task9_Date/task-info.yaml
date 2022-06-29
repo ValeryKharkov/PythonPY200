@@ -3,8 +3,8 @@ files:
 - name: task.py
   visible: true
   placeholders:
-  - offset: 678
-    length: 18
+  - offset: 957
+    length: 14
     placeholder_text: '# TODO class Date'
     initial_state:
       length: 17
@@ -36,5 +36,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 08 Jun 2022 20:42:52 UTC
+  time: Wed, 29 Jun 2022 10:46:25 UTC
 record: -1
