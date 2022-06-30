@@ -100,7 +100,7 @@ files:
   visible: true
   placeholders:
   - offset: 56
-    length: 48
+    length: 58
     placeholder_text: '...):  # TODO наследоваться от unittest.TestCase'
     initial_state:
       length: 48
@@ -109,8 +109,8 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: 'unittest.TestCase):'
-  - offset: 247
-    length: 66
+  - offset: 257
+    length: 73
     placeholder_text: '...  # TODO с помощью метода assertIsNone проверить следующий
       узел'
     initial_state:
@@ -124,14 +124,14 @@ files:
 
               msg = "Значение следующего узла по умолчанию должно быть None"
               self.assertIsNone(node.next, msg)
-  - offset: 452
-    length: 40
+  - offset: 554
+    length: 65
     placeholder_text: '...  # TODO проверить что узлы связались'
     initial_state:
       length: 40
       offset: 452
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       right_node = Node("right")
@@ -139,22 +139,22 @@ files:
 
               msg = "Значение следующего при инициализации некорректно"
               self.assertEqual(repr(left_node.next), repr(right_node), msg)
-  - offset: 623
-    length: 56
+  - offset: 1009
+    length: 72
     placeholder_text: '...  # TODO проверить метод __repr__ без следующего узла'
     initial_state:
       length: 56
       offset: 623
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       node = Node("node_without_next")
 
               msg = "Значение представления __repr__ некорректно для узла без следующего узла. "
               self.assertEqual(repr(node), "Node(node_without_next, None)", msg)
-  - offset: 685
-    length: 62
+  - offset: 1249
+    length: 55
     placeholder_text: '...  # TODO пропустить тест с помощью декоратора unittest.skip'
     initial_state:
       length: 62
@@ -163,8 +163,8 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: '@unittest.skip("Тест пропущен по причине ...")'
-  - offset: 973
-    length: 40
+  - offset: 1694
+    length: 36
     placeholder_text: '# TODO проверить строковое представление'
     initial_state:
       length: 40
@@ -173,20 +173,20 @@ files:
     selected: false
     status: Unchecked
     encrypted_possible_answer: self.assertEqual(str(node), str(some_value))
-  - offset: 1052
-    length: 57
+  - offset: 1769
+    length: 48
     placeholder_text: '...  # TODO проверить метод is_valid при корректных узлах'
     initial_state:
       length: 57
       offset: 1052
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       Node.is_valid(None)
               Node.is_valid(Node("correct_node"))
-  - offset: 1119
-    length: 99
+  - offset: 2012
+    length: 95
     placeholder_text: '# TODO с помощью менеджера контакста и метода assertRaises
       проверить корректность вызываемой ошибки'
     initial_state:

@@ -40,7 +40,7 @@ files:
        if not isinstance(node, (type(None), Node)):
                   raise TypeError
   - offset: 941
-    length: 95
+    length: 87
     placeholder_text: |-
       # TODO метод должен проверять корректность узла и устанавливать значение атрибуту next
               ...
@@ -53,7 +53,7 @@ files:
     encrypted_possible_answer: |-
       self.is_valid(next_)
               self.next = next_
-  - offset: 1070
+  - offset: 1062
     length: 72
     placeholder_text: '# TODO инициализируйте два узла с любыми значеними'
     initial_state:
@@ -65,7 +65,7 @@ files:
     encrypted_possible_answer: |-
       first_node = Node(1)
           second_node = Node(2)
-  - offset: 1173
+  - offset: 1165
     length: 36
     placeholder_text: '# TODO свяжите первый узел со вторым'
     initial_state:

@@ -17,7 +17,7 @@ class DoubleLinkedNode(Node):
     @prev.setter
     def prev(self, prev: Optional["Node"]):
         self.is_valid(prev)
-        self._prev = prev  # TODO сделать слабую ссылку
+        self._prev = None if prev is None else weakref.ref(prev) # сделать слабую ссылку
 
     def __repr__(self) -> str:
         next_prev = None if self.prev is None else f"DoubleLinkedNode({self.prev})"
